@@ -71,19 +71,23 @@ body {
 
 }
 /* Design for Mobile */
-@media only screen and (min-width: 320px) and (max-width:480px) {
-    .portfolio-items-wrapper {
-        display: grid;
-        grid-template-columns: 1fr;    
-    }
-}
 
-@media only screen and (min-width: 481px) and (max-width:1024px) {
-    .portfolio-items-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;    
+@media screen and (max-width:1024px) {
+
+    .container {
+        width: auto;
+        overflow: hidden;
     }
-  }
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        background-color:#222930;
+    }
+    .portfolio-items-wrapper {
+        display: block;
+    }
+   
+}
 
 .portfolio-item-wrapper {
     position: relative;
@@ -151,16 +155,19 @@ body {
     
 }
 
-.footer-wrapper {
+.footer-wrapper > footer {
     display: flex;
     justify-content: center;
-    padding: 38px;
+    height: 80px;
+    padding-top: 30px;
     background-color: #E9E9E9;
 }
 
 .footer-wrapper > footer a{
     margin-right: 20px;
+    margin-left: 10px;
     font-size: 0.9em;
     justify-items: center;
 }
+
 
